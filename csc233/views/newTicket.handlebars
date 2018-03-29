@@ -1,0 +1,21 @@
+<h1>Test</h1>
+<form method="post" action="/tickets/submit">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">SacId</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="219778520" name="sacId">
+  </div>
+  <div class="form-group">
+    <label for="DeptSelection">Department</label>
+     <select class="form-control" id="DeptSelection" name="dept">
+     <option value="">Select Department</option>
+     <option value="cod">Computer Dept</option>
+     <option value="ed">Electronic Dept</option>
+     <option value="cid">Civil Dept</option>
+     </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Issue</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="problem" ></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

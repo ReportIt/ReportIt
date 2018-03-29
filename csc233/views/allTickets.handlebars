@@ -1,0 +1,19 @@
+<h1>All submitted tickets</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SacId</th>
+      <th scope="col">Problem</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+{{#each Tickets}}
+    <tr>
+      <th scope="row">{{this.sacId}}</th>
+      <td>{{this.issue}}</td>
+      <td>{{this.status}}</td>
+    </tr>
+{{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,18 @@
+</table>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Problem</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each Tickets}}
+    <tr data-issue-id={{this._id}}>
+      <td>{{this.issue}}</td>
+      <td>{{this.status}}</td>
+      <td><a href="/admin/tickets/detail/{{this._id}}" class="btn btn-info">Info</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
